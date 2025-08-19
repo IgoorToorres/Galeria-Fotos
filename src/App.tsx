@@ -7,6 +7,7 @@ import Alert from "./components/alert";
 import Divider from "./components/divider";
 import InputText from "./components/input-text";
 import SearchIcon from "./assets/icons/search.svg?react"
+import InputCheckbox from "./components/input-checkbox";
 
 export default function App() {
 	return (
@@ -50,8 +51,13 @@ export default function App() {
 			<div>
 				<Divider />
 			</div>
+
 			<div>
 				<InputText placeholder="Buscar Foto" icon={SearchIcon}/>
+			</div>
+
+			<div>
+				<InputCheckbox />
 			</div>
 		</div>
 	);
