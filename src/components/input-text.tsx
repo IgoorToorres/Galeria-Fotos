@@ -1,6 +1,7 @@
 import { type VariantProps, tv } from "tailwind-variants";
 import Icon from "./icon";
 import Text from "./text";
+import cn from "classnames";
 
 export const inputTextContainerVariants = tv({
     base: "flex flex-col gap-1"
@@ -59,7 +60,7 @@ export default function InputText({
     error,
     ...props
 }: InputTextProps) {
-    return <div className={inputTextContainerVariants(className)}>
+    return <div className={cn(inputTextContainerVariants(), className)}>
         <div className={inputTextWrapperVariants({ size, disabled })}>
             {icon && <Icon svg={icon} className={inputTextIconVariants({size})} />}
             <input
