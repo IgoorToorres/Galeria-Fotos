@@ -1,7 +1,6 @@
 import { useParams } from "react-router";
 import Text from "../components/text";
 import Container from "../components/container";
-import { useState } from "react";
 import type { Photo } from "../contexts/photos/models/photo";
 import Skeleton from "../components/skeleton";
 import PhotosNavigator from "../contexts/photos/components/photos-navigator";
